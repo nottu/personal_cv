@@ -1,25 +1,19 @@
-%!TEX TS-program = xelatex
-%!TEX encoding = UTF-8 Unicode
-% Awesome CV LaTeX Template for CV/Resume
 
 %-------------------------------------------------------------------------------
 % CONFIGURATIONS
 %-------------------------------------------------------------------------------
 % A4 paper size by default, use 'letterpaper' for US letter
-\documentclass[11pt, a4paper]{awesome-cv}
+\documentclass[12pt, a4paper]{awesome-cv}
 
 % Configure page margins with geometry
-\geometry{left=1.4cm, top=1.4cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
-
-% Specify the location of the included fonts
-\fontdir[fonts/]
+\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
 
 % Color for highlights
 % Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
 %                 awesome-nephritis, awesome-concrete, awesome-darknight
 \colorlet{awesome}{awesome-red}
 % Uncomment if you would like to specify your own color
-% \definecolor{awesome}{HTML}{CA63A8}
+\definecolor{awesome}{HTML}{0590FF}
 
 % Colors for text
 % Uncomment if you would like to specify your own color
@@ -27,14 +21,14 @@
 % \definecolor{text}{HTML}{333333}
 % \definecolor{graytext}{HTML}{5D5D5D}
 % \definecolor{lighttext}{HTML}{999999}
+\definecolor{sectiondivider}{HTML}{FF7405}
 
 % Set false if you don't want to highlight section with awesome color
-\setbool{acvSectionColorHighlight}{false}
+\setbool{acvSectionColorHighlight}{true}
 
 % If you would like to change the social information separator from a pipe (|) to something else
 \renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
 
-\onehalfspacing
 
 %-------------------------------------------------------------------------------
 %	PERSONAL INFORMATION
@@ -43,27 +37,17 @@
 % Available options: circle|rectangle,edge/noedge,left/right
 % \photo{./examples/profile.png}
 \name{Javier}{Peralta}
-\position{Software Developer{\enskip\cdotp\enskip} Machine Learning Enthusiast}
-\address{Guanajuato, Guanajuato, México}
+\position{Software Engineer {\enskip\cdotp\enskip} ML Enthusiast}
+\address{Bellevue, Washington, US}
 
-\mobile{(+52) 777 224 0318}
 \email{nottu1990@gmail.com}
-\homepage{nottu.github.io}
+% \homepage{nottu.github.io}
 \github{nottu}
 \linkedin{jperalta90}
-% \gitlab{gitlab-id}
 \stackoverflow{3338192}{nottu}
-% \twitter{@twit}
-% \skype{skype-id}
-% \reddit{reddit-id}
-% \medium{madium-id}
-% \googlescholar{googlescholar-id}{name-to-display}
-%% \firstname and \lastname will be used
-% \googlescholar{googlescholar-id}{}
-% \extrainfo{extra informations}
+
 
 % \quote{``Be the change that you want to see in the world."}
-
 
 %-------------------------------------------------------------------------------
 \begin{document}
@@ -84,11 +68,12 @@
 %	CV/RESUME CONTENT
 %	Each section is imported separately, open each file in turn to modify content
 %-------------------------------------------------------------------------------
-\input{cv/about_me.tex}
+\input{cv/skills.tex}
 \input{cv/experience.tex}
 \input{cv/education.tex}
-\input{cv/thesis.tex}
-\input{cv/skills.tex}
+\input{cv/projects.tex}
+% \input{cv/about_me.tex}
+% \input{cv/thesis.tex}
 
 
 %-------------------------------------------------------------------------------
